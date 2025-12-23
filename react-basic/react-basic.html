@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Basics</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+
+    <script type="text/babel">
+    // const paragra = <p>this is para that u can add directaly</p>
+    // const button = <button>hello</button> ;   
+
+    const div = (
+        <div>
+         <p>this is para that u can add directaly {5+5}</p>
+        <button>hello</button> ;
+        </div>
+    );
+    // by usind div container now it possible to show multiple element because
+    // div is com=ntainer 
+      const container = document.querySelector('.js-container');
+
+      ReactDOM.createRoot(container).render(
+        div
+      );
+    </script>
+  </body>
+</html>
+
+39m
